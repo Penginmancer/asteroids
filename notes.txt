@@ -1,0 +1,6 @@
+what renders the newly split asteroid objects?
+Boots
+
+The new objects are automatically added to the same Pygame sprite groups as the original because Asteroid inherits the existing CircleShape setup.
+
+Your game loop already iterates over the asteroid group and calls each asteroid’s draw() method. Once you instantiate the two new Asteroids, they join that group and are rendered on the next frame.
